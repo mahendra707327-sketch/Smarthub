@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — SmartIncome Hub</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">SI</div>
+      <div>
+        <h1>SmartIncome Hub</h1>
+        <div class="tag">Earn Smart • Live Free</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Contact / Join</h2>
+    <p>Form ke through aap humse contact kar sakte hain. (Ye client-side sample hai — GitHub Pages par backend nahi hota. Agar chahte hain to main Formspree/Netlify form integration add kar dunga.)</p>
+    <form id="contactForm" onsubmit="submitForm(event)" class="contact-form">
+      <label>Naam / Name</label>
+      <input type="text" id="name" required />
+      <label>Email</label>
+      <input type="email" id="email" required />
+      <label>Message (kya seekhna chahte hain)</label>
+      <textarea id="message" rows="5"></textarea>
+      <button class="btn" type="submit">Send / Bhej dein</button>
+      <p id="formStatus" class="small"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>© SmartIncome Hub | Created by Mahendra Singh</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
